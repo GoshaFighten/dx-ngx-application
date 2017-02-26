@@ -1,4 +1,4 @@
-[![Build Status][travis-badge]][travis-badge-url]
+[![Build Status](https://travis-ci.org/GoshaFighten/dx-ngx-application.svg?branch=master)](https://travis-ci.org/GoshaFighten/dx-ngx-application)
 
 # DxNgxApplication
 
