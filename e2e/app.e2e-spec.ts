@@ -7,8 +7,8 @@ describe('dx-ngx-application App', () => {
     page = new DxNgxApplicationPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display DxDataGrid', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getGrid()).toBeTruthy();
   });
 });
