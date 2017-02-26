@@ -1,7 +1,15 @@
-sudo: required
 language: node_js
+sudo: true
+
+cache:
+  directories:
+    - node
+    - node_modules
+
+dist: trusty
+
 node_js:
-  - "6.9"
+  - 6.9.0
 
 branches:
   only:
@@ -11,18 +19,18 @@ addons:
 apt:
   sources:
     - google-chrome
+  packages:
+    - google-chrome-stable
+    - google-chrome-beta
 
 before_install:
-  - export CHROME_BIN=chromium-browser
+  - npm install -g @angular/cli
+  - export CHROME_BIN=/usr/bin/google-chrome
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 
-before_script:
-  - npm install -g @angular/cli
-
 script:
   - ng test --watch false
-  - ng serve &
   - ng e2e
 
 notifications:
