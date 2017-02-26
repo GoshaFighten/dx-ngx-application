@@ -1,4 +1,24 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<div class="topMenu menu">
+  <dx-toolbar [items]="toolbarLinks">
+    <div *dxTemplate="let itemData of 'menuItem'">
+      <a [routerLink]="itemData.path | localize" routerLinkActive="active" class="nav-link">{{itemData.title | translate}}</a>
+    </div>
+    <div *dxTemplate="let itemData of 'item'">
+      <a [routerLink]="'/'  | localize" class="nav-brand">{{itemData.title | translate}}</a>
+    </div>
+  </dx-toolbar>
+</div>
+<div class="leftBar menu">
+  <dx-list [items]="navigationMenu" [grouped]="true" [collapsibleGroups]="false" height="100%" width="100%" [focusStateEnabled]="false"
+    [hoverStateEnabled]="false">
+    <div *dxTemplate="let itemData of 'item'">
+      <a [routerLink]="itemData.path | localize" routerLinkActive="active" class="nav-link">{{itemData.title | translate}}</a>
+    </div>
+    <div *dxTemplate="let groupData of 'group'">
+      <a [routerLink]="'/' | localize" class="nav-brand">{{groupData.key}}</a>
+    </div>
+    </dx-list>
+</div>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

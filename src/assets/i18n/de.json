@@ -1,0 +1,19 @@
+{
+    "GridCaptions": {
+        "OrderId": "ID",
+        "OrderDate": "Datum",
+        "CustomerName": "Name",
+        "ShipCountry": "Land",
+        "ShipCity": "Stadt"
+    },
+    "NavMenu": {
+        "Home": "Haus",
+        "Counter": "Zähler",
+        "Settings": "Einstellungen"
+    },
+    "CounterComponent": {
+        "Increment": "Zuwachs",
+        "Count": "Anzahl",
+        "Description": "This is a simple example of an Angular component."
+    }
+}

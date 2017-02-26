@@ -1,0 +1,76 @@
+.leftBar {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.content {
+    width: calc(75% - 50px);
+    height: calc(100% - 50px);
+    float: left;
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.nav-link {
+    padding: 10px;    
+    display: block;
+    color: #333;
+}
+
+.leftBar a.nav-link {
+    color: #fff;
+}
+
+.dx-list-item-content {
+    padding: 0;
+}
+
+a.active {
+    background-color: #4189C7;
+    color: white;
+}
+
+.nav-brand {
+    font-size: 18px;
+    line-height: 20px;
+    color: #9d9d9d;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.topMenu {
+    padding: 13px 10px 10px 10px;
+    display: none;
+}
+
+.menu {
+    background-color: #222;
+}
+
+.dx-toolbar {
+    background-color: inherit;
+}
+
+/deep/ .leftBar .dx-list-item {
+    border-top: none;
+}
+
+@media (max-width: 768px) {
+    .topMenu {
+        display: block;
+    }
+
+    .leftBar {
+        display: none;        
+    }
+
+    .content {
+        width: calc(100% - 20px);
+        height: calc(100% - 79px);
+        padding: 10px;
+    }
+}
