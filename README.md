@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/GoshaFighten/dx-ngx-application.svg?branch=master)](https://travis-ci.org/GoshaFighten/dx-ngx-application)
+[![Dependency Status](https://david-dm.org/GoshaFighten/dx-ngx-application.svg?branch=master)](https://david-dm.org/GoshaFighten/dx-ngx-application)
 
 # DxNgxApplication
 
