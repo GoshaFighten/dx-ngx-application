@@ -1,9 +1,8 @@
+# DxNgxApplication
+
 [![Build Status](https://travis-ci.org/GoshaFighten/dx-ngx-application.svg?branch=master)](https://travis-ci.org/GoshaFighten/dx-ngx-application)
 [![Dependencies Status](https://david-dm.org/GoshaFighten/dx-ngx-application/status.svg)](https://david-dm.org/GoshaFighten/dx-ngx-application)
 [![devDependencies Status](https://david-dm.org/GoshaFighten/dx-ngx-application/dev-status.svg)](https://david-dm.org/GoshaFighten/dx-ngx-application?type=dev)
-
-# DxNgxApplication
-
 [![Greenkeeper badge](https://badges.greenkeeper.io/GoshaFighten/dx-ngx-application.svg)](https://greenkeeper.io/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
