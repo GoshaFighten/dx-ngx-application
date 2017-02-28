@@ -14,6 +14,27 @@ import { COUNTRIES } from './../../services/country/mock-countries';
 import { CityService } from './../../services/city/city.service';
 import { CITIES } from './../../services/city/mock-cities';
 
+class OrderServiceSpy {
+  getOrders = jasmine.createSpy('getOrders').and.callFake(
+    () => Promise
+      .resolve(ORDERS)
+  );
+}
+
+class CountryServiceSpy {
+  getCountries = jasmine.createSpy('getCountries').and.callFake(
+    () => Promise
+      .resolve(COUNTRIES)
+  );
+}
+
+class CityServiceSpy {
+  getCities = jasmine.createSpy('getCities').and.callFake(
+    () => Promise
+      .resolve(CITIES)
+  );
+}
+
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
@@ -26,20 +47,21 @@ describe('HomeComponent', () => {
         TranslateStubPipe
       ]
     })
+      .overrideComponent(HomeComponent, {
+        set: {
+          providers: [
+            { provide: OrderService, useClass: OrderServiceSpy },
+            { provide: CountryService, useClass: CountryServiceSpy },
+            { provide: CityService, useClass: CityServiceSpy }
+          ]
+        }
+      })
       .compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
-    const os = fixture.debugElement.injector.get(OrderService);
-    spyOn(os, 'getOrders').and.returnValue(Promise.resolve(ORDERS));
-
-    const cnts = fixture.debugElement.injector.get(CountryService);
-    spyOn(cnts, 'getCountries').and.returnValue(Promise.resolve(COUNTRIES));
-
-    const cts = fixture.debugElement.injector.get(CityService);
-    spyOn(cts, 'getCities').and.returnValue(Promise.resolve(CITIES));
 
     fixture.detectChanges();
   });
