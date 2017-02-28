@@ -1,13 +1,19 @@
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/toPromise';
 
 import { Order } from './../../models/order';
-import { ORDERS } from './mock-orders';
+
+import { handleError } from './../services-utils';
 
 @Injectable()
 export class OrderService {
-
-  constructor() { }
+  private ordersUrl = 'api/orders';
+  constructor(private http: Http) { }
   getOrders(): Promise<Order[]> {
-    return Promise.resolve(ORDERS);
+    return this.http.get(this.ordersUrl)
+      .toPromise()
+      .then(response => response.json().data as Order[])
+      .catch(handleError);
   }
 }

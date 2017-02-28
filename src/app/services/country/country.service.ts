@@ -1,13 +1,19 @@
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/toPromise';
 
 import { Country } from '../../models/country';
-import { COUNTRIES } from './mock-countries';
+
+import { handleError } from './../services-utils';
 
 @Injectable()
 export class CountryService {
-
-  constructor() { }
+  private countriesUrl = 'api/countries';
+  constructor(private http: Http) { }
   getCountries(): Promise<Country[]> {
-    return Promise.resolve(COUNTRIES);
+    return this.http.get(this.countriesUrl)
+      .toPromise()
+      .then(response => response.json().data as Country[])
+      .catch(handleError);
   }
 }

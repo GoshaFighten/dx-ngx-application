@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+
 import { DevExtremeModule } from 'devextreme-angular';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,7 +28,8 @@ import { SettingsComponent } from './components/settings/settings.component';
     HttpModule,
     AppRoutingModule,
     AppLocalizeModule,
-    DevExtremeModule
+    DevExtremeModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService, { passThruUnknownUrl: true })
   ],
   providers: [],
   bootstrap: [AppComponent]
