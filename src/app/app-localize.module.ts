@@ -8,7 +8,7 @@ import { AppManualParserLoader } from './app-manual-parser-loader';
 import { appRoutes } from './app.routes';
 import { loadMessages } from 'devextreme/localization';
 import 'devextreme-intl';
-const messagesDe = require('devextreme/localization/messages/de.json');
+import * as messagesDe from 'devextreme/localization/messages/de.json';
 
 loadMessages(messagesDe);
 

@@ -16,7 +16,7 @@ export class AppManualParserLoader extends ManualParserLoader {
         return this.injector.get(Router);
     }
     translateRoutes(language: string): Promise<any> {
-        if (this.router.routeReuseStrategy['clearState']) {
+        if (this.router && this.router.routeReuseStrategy['clearState']) {
             this.router.routeReuseStrategy['clearState']();
         }
         locale(language);
