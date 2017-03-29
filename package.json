@@ -25,7 +25,7 @@
     "angular-in-memory-web-api": "^0.3.0",
     "core-js": "^2.4.1",
     "devextreme": "^16.2.4",
-    "devextreme-angular": "^16.2.6-rc.1",
+    "devextreme-angular": "^16.2.6",
     "devextreme-intl": "^16.2.4",
     "localize-router": "^0.6.4",
     "rxjs": "^5.1.0",
