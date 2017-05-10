@@ -26,20 +26,20 @@
     "core-js": "^2.4.1",
     "devextreme": "^16.2.4",
     "devextreme-angular": "^16.2.6",
-    "devextreme-intl": "^16.2.4",
+    "devextreme-intl": "^17.1.4-pre-17130",
     "localize-router": "^0.7.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.1",
+    "@angular/cli": "1.0.2",
     "@angular/compiler-cli": "^4.0.0",
     "@types/jasmine": "2.5.47",
     "@types/node": "~7.0.5",
     "codelyzer": "~3.0.0-beta.1",
     "jasmine-core": "~2.6.0",
     "jasmine-spec-reporter": "~3.3.0",
-    "karma": "~1.6.0",
+    "karma": "~1.7.0",
     "karma-chrome-launcher": "~2.1.1",
     "karma-cli": "~1.0.1",
     "karma-jasmine": "~1.1.0",
@@ -47,7 +47,7 @@
     "karma-coverage-istanbul-reporter": "^1.0.0",
     "protractor": "~5.1.0",
     "ts-node": "~3.0.0",
-    "tslint": "~5.1.0",
+    "tslint": "~5.2.0",
     "typescript": "~2.2.1"
   }
 }
