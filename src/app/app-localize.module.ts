@@ -1,6 +1,6 @@
 import { NgModule, Injector } from '@angular/core';
 import { Location, CommonModule } from '@angular/common';
-import { HttpModule, Http } from '@angular/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateService, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LocalizeRouterModule, LocalizeParser, LocalizeRouterService } from 'localize-router';
@@ -12,7 +12,7 @@ import * as messagesDe from 'devextreme/localization/messages/de.json';
 
 loadMessages(messagesDe);
 
-export function HttpLoaderFactory(http: Http) {
+export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
@@ -23,12 +23,12 @@ export function localizeLoaderFactory(translate: TranslateService, location: Loc
 @NgModule({
   imports: [
     CommonModule,
-    HttpModule,
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [Http]
+        deps: [HttpClient]
       }
     }),
     LocalizeRouterModule.forRoot(appRoutes, {
