@@ -13,7 +13,7 @@ import * as messagesDe from 'devextreme/localization/messages/de.json';
 loadMessages(messagesDe);
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, './assets/i18n/');
 }
 
 export function localizeLoaderFactory(translate: TranslateService, location: Location, injector: Injector) {

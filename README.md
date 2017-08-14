@@ -5,6 +5,8 @@
 [![devDependencies Status](https://david-dm.org/GoshaFighten/dx-ngx-application/dev-status.svg)](https://david-dm.org/GoshaFighten/dx-ngx-application?type=dev)
 [![Greenkeeper badge](https://badges.greenkeeper.io/GoshaFighten/dx-ngx-application.svg)](https://greenkeeper.io/)
 
+See this application in action: [https://goshafighten.github.io/dx-ngx-application/](https://goshafighten.github.io/dx-ngx-application/).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
 
 ## Development server
