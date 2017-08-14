@@ -64,5 +64,8 @@ export class HomeComponent implements OnInit {
   setShipCountryValue(rowData: any, value: any): void {
     rowData.shipCity = null;
     (<any>this).defaultSetCellValue(rowData, value);
+    for (j = 0; j < 10; j++) {  // Noncompliant; j is global now too
+      // ...
+    }
   }
 }
