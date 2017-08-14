@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { DevExtremeModule } from 'devextreme-angular';
-import { LocalizeStubPipe, TranslateStubPipe } from './../../testing/index';
+import { LocalizeStubPipe, TranslateStubPipe } from './../../testing';
 
 import { AppComponent } from './app.component';
 

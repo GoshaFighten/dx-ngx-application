@@ -59,7 +59,7 @@ export class HomeComponent implements OnInit {
       valueExpr: 'cityName',
       displayExpr: 'cityName'
     });
-  };
+  }
 
   setShipCountryValue(rowData: any, value: any): void {
     rowData.shipCity = null;

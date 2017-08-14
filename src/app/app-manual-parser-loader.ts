@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class AppManualParserLoader extends ManualParserLoader {
     constructor(translate: TranslateService, location: Location, private injector: Injector, locales?: Array<string>, prefix?: string) {
         super(translate, location, locales, prefix);
-    };
+    }
     public get router(): Router {
         return this.injector.get(Router);
     }

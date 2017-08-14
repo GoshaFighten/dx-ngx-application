@@ -4,7 +4,7 @@ import { LocalizeRouterService } from 'localize-router';
 import { SettingsComponent } from './settings.component';
 
 import { DevExtremeModule } from 'devextreme-angular';
-import { TranslateStubPipe, LocalizeServiceStub } from './../../../../testing/index';
+import { TranslateStubPipe, LocalizeServiceStub } from './../../../../testing';
 
 describe('SettingsComponent', () => {
   let component: SettingsComponent;

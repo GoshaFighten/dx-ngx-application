@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core
 import { HomeComponent } from './home.component';
 
 import { DevExtremeModule } from 'devextreme-angular';
-import { TranslateStubPipe } from './../../../../testing/index';
+import { TranslateStubPipe } from './../../../../testing';
 
 import { OrderService } from './../../services/order/order.service';
 import { ORDERS } from './../../services/order/mock-orders';

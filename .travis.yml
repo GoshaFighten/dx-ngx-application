@@ -9,7 +9,7 @@ cache:
 dist: trusty
 
 node_js:
-  - 6.9.0
+  - 8.1.4
 
 branches:
   only:
@@ -31,7 +31,9 @@ before_install:
   - sleep 3
 
 script:
-  - ng test --watch false
+  - npm run lint
+  - npm run test --watch false
+  - npm run e2e
 
 notifications:
   email:
