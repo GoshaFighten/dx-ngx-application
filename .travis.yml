@@ -17,9 +17,6 @@ branches:
     - /^greenkeeper/.*$/
 
 addons:
-  sonarcloud:
-    organization: "goshafighten-github"
-
 apt:
   sources:
     - google-chrome
@@ -37,7 +34,6 @@ script:
   - npm run lint
   - npm run test -- --watch=false
   - npm run e2e
-  - sonar-scanner
 
 after_success:
   - npm i -g angular-cli-ghpages
