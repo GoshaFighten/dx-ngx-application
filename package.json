@@ -28,7 +28,7 @@
     "devextreme": "^17.1.5",
     "devextreme-angular": "^17.1.5",
     "devextreme-intl": "^17.1.4",
-    "localize-router": "^0.7.1",
+    "localize-router": "^1.0.0-rc.0",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
