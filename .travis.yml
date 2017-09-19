@@ -32,7 +32,6 @@ before_install:
 
 script:
   - npm run lint
-  - npm run test -- --watch=false
   - travis_retry npm run test -- --watch=false
   - npm run e2e
 
