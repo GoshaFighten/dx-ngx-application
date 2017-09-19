@@ -10,6 +10,8 @@ dist: trusty
 
 node_js:
   - 8.1.4
+  
+bundler_args: --retry 5
 
 branches:
   only:
