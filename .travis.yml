@@ -10,6 +10,8 @@ dist: trusty
 
 node_js:
   - 8.1.4
+  
+bundler_args: --retry 5
 
 branches:
   only:
@@ -32,7 +34,7 @@ before_install:
 
 script:
   - npm run lint
-  - npm run test -- --watch=false
+  - travis_retry npm run test -- --watch=false
   - npm run e2e
 
 after_success:
