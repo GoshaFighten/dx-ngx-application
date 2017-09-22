@@ -4,7 +4,6 @@ sudo: true
 cache:
   directories:
     - node
-    - node_modules
 
 dist: trusty
 
