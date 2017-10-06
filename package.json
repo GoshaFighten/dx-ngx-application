@@ -23,7 +23,7 @@
     "@angular/router": "^4.2.4",
     "@ngx-translate/core": "^8.0.0",
     "@ngx-translate/http-loader": "^2.0.0",
-    "angular-in-memory-web-api": "^0.4.6",
+    "angular-in-memory-web-api": "^0.5.0",
     "core-js": "^2.4.1",
     "devextreme": "^17.1.5",
     "devextreme-angular": "^17.1.5",
