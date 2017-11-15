@@ -1,11 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-<<<<<<< HEAD
     "name": "dx-ngx-application"
-=======
-    "name": "ngtest"
->>>>>>> chore: initial commit from @angular/cli
   },
   "apps": [
     {
@@ -23,11 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-<<<<<<< HEAD
         "../node_modules/devextreme/dist/css/dx.common.css",
         "../node_modules/devextreme/dist/css/dx.light.css",
-=======
->>>>>>> chore: initial commit from @angular/cli
         "styles.css"
       ],
       "scripts": [],

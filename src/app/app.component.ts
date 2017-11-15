@@ -1,17 +1,12 @@
-<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 
 import { appRoutes } from './app.routes';
-=======
-import { Component } from '@angular/core';
->>>>>>> chore: initial commit from @angular/cli
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-<<<<<<< HEAD
 export class AppComponent implements OnInit {
   navigationMenu: any[];
   toolbarLinks: any[];
@@ -44,8 +39,4 @@ export class AppComponent implements OnInit {
       location: 'before'
     });
   }
-=======
-export class AppComponent {
-  title = 'app';
->>>>>>> chore: initial commit from @angular/cli
 }
