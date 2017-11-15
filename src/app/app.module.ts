@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -30,6 +31,19 @@ import { SettingsComponent } from './components/settings/settings.component';
     AppLocalizeModule,
     DevExtremeModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService, { passThruUnknownUrl: true })
+=======
+
+
+import { AppComponent } from './app.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule
+>>>>>>> chore: initial commit from @angular/cli
   ],
   providers: [],
   bootstrap: [AppComponent]

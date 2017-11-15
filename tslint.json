@@ -15,7 +15,12 @@
     "forin": true,
     "import-blacklist": [
       true,
+<<<<<<< HEAD
       "rxjs"
+=======
+      "rxjs",
+      "rxjs/Rx"
+>>>>>>> chore: initial commit from @angular/cli
     ],
     "import-spacing": true,
     "indent": [
@@ -135,8 +140,11 @@
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true,
+<<<<<<< HEAD
     "no-access-missing-member": true,
     "templates-use-public": true,
+=======
+>>>>>>> chore: initial commit from @angular/cli
     "invoke-injectable": true
   }
 }

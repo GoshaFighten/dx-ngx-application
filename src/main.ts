@@ -8,4 +8,9 @@ if (environment.production) {
   enableProdMode();
 }
 
+<<<<<<< HEAD
 platformBrowserDynamic().bootstrapModule(AppModule);
+=======
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.log(err));
+>>>>>>> chore: initial commit from @angular/cli
