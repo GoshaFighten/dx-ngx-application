@@ -55,7 +55,7 @@ a.active {
     background-color: inherit;
 }
 
-/deep/ .leftBar .dx-list-item {
+::ng-deep .leftBar .dx-list-item {
     border-top: none;
 }
 

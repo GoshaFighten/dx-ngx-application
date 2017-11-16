@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
 import { DevExtremeModule } from 'devextreme-angular';
@@ -25,11 +25,11 @@ import { SettingsComponent } from './components/settings/settings.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     AppRoutingModule,
     AppLocalizeModule,
     DevExtremeModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService, { passThruUnknownUrl: true })
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { passThruUnknownUrl: true })
   ],
   providers: [],
   bootstrap: [AppComponent]
