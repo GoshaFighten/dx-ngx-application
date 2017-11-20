@@ -35,6 +35,8 @@ module.exports = function (config) {
       }
     },
     singleRun: false,
-    retryLimit: 5
+    retryLimit: 5,
+    browserDisconnectTolerance: 2,
+    browserNoActivityTimeout: 50000
   });
 };
