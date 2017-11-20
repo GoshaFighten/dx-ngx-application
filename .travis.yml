@@ -10,8 +10,7 @@ branches:
     - master
     - /^greenkeeper/.*$/
 
-install:
-  - npm install
+cache: yarn
 
 script:
   # Use Chromium instead of Chrome.
