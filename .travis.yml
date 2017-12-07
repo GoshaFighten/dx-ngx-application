@@ -12,6 +12,10 @@ branches:
 
 cache: yarn
 
+before_install: yarn global add greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload
+
 script:
   # Use Chromium instead of Chrome.
   - export CHROME_BIN=chromium-browser
