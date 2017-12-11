@@ -1001,9 +1001,9 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codelyzer@~3.2.0:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/codelyzer/-/codelyzer-3.2.2.tgz#abbd4e5956c435677740846e5858c915f89679c3"
+codelyzer@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/codelyzer/-/codelyzer-4.0.2.tgz#d5e2390b97d95e73a7b1e6f0cf03e16cbf35b06f"
   dependencies:
     app-root-path "^2.0.1"
     css-selector-tokenizer "^0.7.0"
@@ -4453,7 +4453,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-protractor@5.2.1:
+protractor@~5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/protractor/-/protractor-5.2.1.tgz#b4e4b6145c71f94e617b006ee353e05651eab88d"
   dependencies:
