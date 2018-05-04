@@ -8,12 +8,12 @@ import { handleError } from './../services-utils';
 
 @Injectable()
 export class CityService {
-  private citiesUrl = 'api/cities';
-  constructor(private http: HttpClient) { }
-  getCities(): Promise<City[]> {
-    return this.http.get(this.citiesUrl)
-      .toPromise()
-      .then(response => response as City[])
-      .catch(handleError);
-  }
+    private citiesUrl = 'api/cities';
+    constructor(private http: HttpClient) { }
+    getCities(): Promise<City[]> {
+        return this.http.get(this.citiesUrl)
+            .toPromise()
+            .then(response => response as City[])
+            .catch(handleError);
+    }
 }

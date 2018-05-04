@@ -2,6 +2,8 @@
 
 <p>{{ 'CounterComponent.Description' | translate }}</p>
 
-<p>{{ 'CounterComponent.Count' | translate }}: <strong>{{ currentCount }}</strong></p>
+<p>{{ 'CounterComponent.Count' | translate }}:
+    <strong>{{ currentCount }}</strong>
+</p>
 
 <dx-button [text]="'CounterComponent.Increment' | translate" (onClick)="incrementCounter()"></dx-button>

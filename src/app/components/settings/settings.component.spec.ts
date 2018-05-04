@@ -7,28 +7,28 @@ import { DevExtremeModule } from 'devextreme-angular';
 import { TranslateStubPipe, LocalizeServiceStub } from './../../../../testing';
 
 describe('SettingsComponent', () => {
-  let component: SettingsComponent;
-  let fixture: ComponentFixture<SettingsComponent>;
+    let component: SettingsComponent;
+    let fixture: ComponentFixture<SettingsComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [DevExtremeModule],
-      declarations: [
-        SettingsComponent,
-        TranslateStubPipe
-      ],
-      providers: [{ provide: LocalizeRouterService, useClass: LocalizeServiceStub }]
-    })
-      .compileComponents();
-  }));
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            imports: [DevExtremeModule],
+            declarations: [
+                SettingsComponent,
+                TranslateStubPipe
+            ],
+            providers: [{ provide: LocalizeRouterService, useClass: LocalizeServiceStub }]
+        })
+            .compileComponents();
+    }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SettingsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(SettingsComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

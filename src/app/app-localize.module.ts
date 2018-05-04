@@ -13,41 +13,40 @@ import * as messagesDe from 'devextreme/localization/messages/de.json';
 loadMessages(messagesDe);
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/');
+    return new TranslateHttpLoader(http, './assets/i18n/');
 }
 
 export function localizeLoaderFactory(
-  translate: TranslateService,
-  location: Location,
-  setting: LocalizeRouterSettings,
-  injector: Injector
+    translate: TranslateService,
+    location: Location,
+    setting: LocalizeRouterSettings,
+    injector: Injector
 ) {
-  return new AppManualParserLoader(translate, location, setting, injector, ['en', 'de']);
+    return new AppManualParserLoader(translate, location, setting, injector, ['en', 'de'], '');
 }
 
 @NgModule({
-  imports: [
-    CommonModule,
-    HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),
-    LocalizeRouterModule.forRoot(appRoutes, {
-      parser: {
-        provide: LocalizeParser,
-        useFactory: localizeLoaderFactory,
-        deps: [TranslateService, Location, LocalizeRouterSettings, Injector]
-      }
-    }),
-  ],
-  exports: [
-    TranslateModule,
-    LocalizeRouterModule
-  ]
+    imports: [
+        CommonModule,
+        HttpClientModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
+        LocalizeRouterModule.forRoot(appRoutes, {
+            parser: {
+                provide: LocalizeParser,
+                useFactory: localizeLoaderFactory,
+                deps: [TranslateService, Location, LocalizeRouterSettings, Injector]
+            }
+        }),
+    ],
+    exports: [
+        TranslateModule,
+        LocalizeRouterModule
+    ]
 })
-export class AppLocalizeModule {
-}
+export class AppLocalizeModule { }

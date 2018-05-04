@@ -1,5 +1,5 @@
 import { Injector } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 import { ManualParserLoader, LocalizeRouterSettings } from 'localize-router';
 import { locale } from 'devextreme/localization';

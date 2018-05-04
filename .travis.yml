@@ -3,7 +3,7 @@ sudo: false
 
 language: node_js
 node_js:
-  - "6"
+  - "8"
 
 branches:
   only:
@@ -19,14 +19,14 @@ after_script: greenkeeper-lockfile-upload
 script:
   # Use Chromium instead of Chrome.
   - export CHROME_BIN=chromium-browser
-  - npm run lint
-  - travis_retry xvfb-run -a npm run test -- --single-run --no-progress --browser=ChromeNoSandbox
-  - xvfb-run -a npm run e2e -- --no-progress --config=protractor-ci.conf.js
+  - yarn run lint
+  - travis_retry xvfb-run -a yarn run test -- --single-run --no-progress --browser=ChromeNoSandbox
+  - xvfb-run -a yarn run e2e -- --no-progress --config=e2e/protractor-ci.conf.js
 
 after_success:
   - test $TRAVIS_BRANCH = "master" &&
     yarn global add angular-cli-ghpages &&
-    npm run build -- --base-href "https://goshafighten.github.io/dx-ngx-application/" &&
+    yarn run build -- --base-href "https://goshafighten.github.io/dx-ngx-application/" &&
     angular-cli-ghpages --repo=https://GH_TOKEN@github.com/GoshaFighten/dx-ngx-application.git --name="Deploy Bot" --email=botemail@gmail.com
 
 notifications:

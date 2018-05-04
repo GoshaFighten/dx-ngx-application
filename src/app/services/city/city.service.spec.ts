@@ -4,14 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { CityService } from './city.service';
 
 describe('CityService', () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [HttpClientModule],
-      providers: [CityService]
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            imports: [HttpClientModule],
+            providers: [CityService]
+        });
     });
-  });
 
-  it('should ...', inject([CityService], (service: CityService) => {
-    expect(service).toBeTruthy();
-  }));
+    it('should ...', inject([CityService], (service: CityService) => {
+        expect(service).toBeTruthy();
+    }));
 });

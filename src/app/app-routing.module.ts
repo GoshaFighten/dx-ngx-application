@@ -5,13 +5,11 @@ import { CustomReuseStrategy } from './custom-reuse-strategy';
 import { appRoutes } from './app.routes';
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
-  exports: [RouterModule],
-  providers: [
-    {
-      provide: RouteReuseStrategy,
-      useClass: CustomReuseStrategy
-    }
-  ]
+    imports: [RouterModule.forRoot(appRoutes)],
+    exports: [RouterModule],
+    providers: [{
+        provide: RouteReuseStrategy,
+        useClass: CustomReuseStrategy
+    }]
 })
 export class AppRoutingModule { }

@@ -1,17 +1,17 @@
 <dx-data-grid [dataSource]="orders" height="100%" [showBorders]="true">
-  <dxi-column dataField="orderID" [caption]="'GridCaptions.OrderId' | translate"></dxi-column>
-  <dxi-column dataField="orderDate" dataType="date" [caption]="'GridCaptions.OrderDate' | translate"></dxi-column>
-  <dxi-column dataField="customerName" [caption]="'GridCaptions.CustomerName' | translate"></dxi-column>
-  <dxi-column dataField="shipCountry" [setCellValue]="setShipCountryValue" [lookup]="shipCountryLookupConfig" [caption]="'GridCaptions.ShipCountry' | translate"></dxi-column>
-  <dxi-column dataField="shipCity" [lookup]="shipCityLookupConfig" [caption]="'GridCaptions.ShipCity' | translate"></dxi-column>
-  <dxo-filter-row [visible]="true"></dxo-filter-row>
-  <dxo-header-filter [visible]="true"></dxo-header-filter>
-  <dxo-group-panel [visible]="true"></dxo-group-panel>
-  <dxo-editing [allowAdding]="true" [allowDeleting]="true" [allowUpdating]="true"></dxo-editing>
-  <dxo-grouping [autoExpandAll]="false"></dxo-grouping>
-  <dxo-summary>
-    <dxi-total-item column="orderDate" summaryType="min"></dxi-total-item>
-    <dxi-group-item column="shipCity" summaryType="count"></dxi-group-item>
-    <dxi-group-item summaryType="count"></dxi-group-item>
-  </dxo-summary>
+    <dxi-column dataField="orderID" [caption]="'GridCaptions.OrderId' | translate"></dxi-column>
+    <dxi-column dataField="orderDate" dataType="date" [caption]="'GridCaptions.OrderDate' | translate"></dxi-column>
+    <dxi-column dataField="customerName" [caption]="'GridCaptions.CustomerName' | translate"></dxi-column>
+    <dxi-column dataField="shipCountry" [setCellValue]="setShipCountryValue" [lookup]="shipCountryLookupConfig" [caption]="'GridCaptions.ShipCountry' | translate"></dxi-column>
+    <dxi-column dataField="shipCity" [lookup]="shipCityLookupConfig" [caption]="'GridCaptions.ShipCity' | translate"></dxi-column>
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+    <dxo-header-filter [visible]="true"></dxo-header-filter>
+    <dxo-group-panel [visible]="true"></dxo-group-panel>
+    <dxo-editing [allowAdding]="true" [allowDeleting]="true" [allowUpdating]="true"></dxo-editing>
+    <dxo-grouping [autoExpandAll]="false"></dxo-grouping>
+    <dxo-summary>
+        <dxi-total-item column="orderDate" summaryType="min"></dxi-total-item>
+        <dxi-group-item column="shipCity" summaryType="count"></dxi-group-item>
+        <dxi-group-item summaryType="count"></dxi-group-item>
+    </dxo-summary>
 </dx-data-grid>
