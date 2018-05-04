@@ -20,13 +20,13 @@ script:
   # Use Chromium instead of Chrome.
   - export CHROME_BIN=chromium-browser
   - yarn run lint
-  - travis_retry xvfb-run -a yarn run test -- --single-run --no-progress --browser=ChromeNoSandbox
-  - xvfb-run -a yarn run e2e -- --no-progress --config=e2e/protractor-ci.conf.js
+  - travis_retry xvfb-run -a yarn run test --single-run --no-progress --browser=ChromeNoSandbox
+  - xvfb-run -a yarn run e2e --no-progress --config=e2e/protractor-ci.conf.js
 
 after_success:
   - test $TRAVIS_BRANCH = "master" &&
     yarn global add angular-cli-ghpages &&
-    yarn run build -- --base-href "https://goshafighten.github.io/dx-ngx-application/" &&
+    yarn run build --base-href "https://goshafighten.github.io/dx-ngx-application/dx-ngx-application/" &&
     angular-cli-ghpages --repo=https://GH_TOKEN@github.com/GoshaFighten/dx-ngx-application.git --name="Deploy Bot" --email=botemail@gmail.com
 
 notifications:
