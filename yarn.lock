@@ -227,9 +227,9 @@
   version "6.0.108"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.108.tgz#852e8496bcfc5e74cae83a5eb3b30e5661e9b7b9"
 
-"@types/node@~8.9.4":
-  version "8.9.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.9.5.tgz#162b864bc70be077e6db212b322754917929e976"
+"@types/node@~10.0.7":
+  version "10.0.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.0.7.tgz#c1c9e2a68be8c1544c8761012cd6cf722949691f"
 
 "@types/q@^0.0.32":
   version "0.0.32"
