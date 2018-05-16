@@ -26,7 +26,7 @@
     "core-js": "^2.5.4",
     "devextreme": "^18.1.3",
     "devextreme-angular": "^17.2.7",
-    "devextreme-intl": "^17.2.7",
+    "devextreme-intl": "^18.1.3",
     "localize-router": "^1.0.0-rc.4",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.1.0",
