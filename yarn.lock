@@ -1601,13 +1601,13 @@ devextreme-angular@^18.1.3:
   version "18.1.3"
   resolved "https://registry.yarnpkg.com/devextreme-angular/-/devextreme-angular-18.1.3.tgz#438950970732dbcf5318ffe2f875d85040d70d7e"
 
-devextreme-intl@^17.2.7:
-  version "17.2.7"
-  resolved "https://registry.yarnpkg.com/devextreme-intl/-/devextreme-intl-17.2.7.tgz#00a5a1857e0be912b71ab7351047af88d6606711"
+devextreme-intl@^18.1.3:
+  version "18.1.3"
+  resolved "https://registry.yarnpkg.com/devextreme-intl/-/devextreme-intl-18.1.3.tgz#9d85211080f84cfa2b670b85a156210cc68838e5"
 
-devextreme@^17.2.7:
-  version "17.2.7"
-  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-17.2.7.tgz#445b2170be03cc7609176e59018b7698366048be"
+devextreme@^18.1.3:
+  version "18.1.3"
+  resolved "https://registry.yarnpkg.com/devextreme/-/devextreme-18.1.3.tgz#c68ac3c629e5206223c4fed8da55c25c50a336ef"
   dependencies:
     jszip "^2.0.0 || ^3.0.0"
 
