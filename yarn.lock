@@ -5333,9 +5333,16 @@ source-map-support@^0.4.1, source-map-support@~0.4.0:
   dependencies:
     source-map "^0.5.6"
 
-source-map-support@^0.5.0, source-map-support@^0.5.3:
+source-map-support@^0.5.0:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.5.tgz#0d4af9e00493e855402e8ec36ebed2d266fceb90"
+  dependencies:
+    buffer-from "^1.0.0"
+    source-map "^0.6.0"
+
+source-map-support@^0.5.6:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.6.tgz#4435cee46b1aab62b8e8610ce60f788091c51c13"
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -5750,17 +5757,16 @@ trim-right@^1.0.1:
   dependencies:
     glob "^6.0.4"
 
-ts-node@~6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-6.0.3.tgz#28bf74bcad134fad17f7469dad04638ece03f0f4"
+ts-node@~6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-6.1.1.tgz#19607140acb06150441fcdb61be11f73f7b6657e"
   dependencies:
     arrify "^1.0.0"
-    chalk "^2.3.0"
     diff "^3.1.0"
     make-error "^1.1.1"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
-    source-map-support "^0.5.3"
+    source-map-support "^0.5.6"
     yn "^2.0.0"
 
 tsickle@^0.27.2:
