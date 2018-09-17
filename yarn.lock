@@ -251,9 +251,9 @@
   version "6.0.108"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.108.tgz#852e8496bcfc5e74cae83a5eb3b30e5661e9b7b9"
 
-"@types/node@~10.9.1":
-  version "10.9.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.1.tgz#06f002136fbcf51e730995149050bb3c45ee54e6"
+"@types/node@~10.10.1":
+  version "10.10.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.10.1.tgz#d5c96ca246a418404914d180b7fdd625ad18eca6"
 
 "@types/q@^0.0.32":
   version "0.0.32"
