@@ -490,9 +490,9 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-angular-in-memory-web-api@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/angular-in-memory-web-api/-/angular-in-memory-web-api-0.6.0.tgz#28262d6f7cdf1415c1d540c1a5cb838d58cb602a"
+angular-in-memory-web-api@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/angular-in-memory-web-api/-/angular-in-memory-web-api-0.7.0.tgz#a6ea4cf7aa0d1edc369dd41f26c87e785460c3d3"
 
 ansi-colors@^3.0.0:
   version "3.1.0"
