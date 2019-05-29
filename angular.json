@@ -93,6 +93,11 @@
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "dx-ngx-application:serve"
+          },
+          "configurations": {
+            "ci": {
+              "protractorConfig": "e2e/protractor-ci.conf.js"
+            }
           }
         },
         "lint": {

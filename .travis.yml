@@ -18,8 +18,8 @@ script:
   # Use Chromium instead of Chrome.
   - export CHROME_BIN=chromium-browser
   - yarn run lint
-  - travis_retry xvfb-run -a yarn run test --single-run --no-progress --browser=ChromeNoSandbox
-  - xvfb-run -a yarn run e2e --no-progress --config=e2e/protractor-ci.conf.js
+  - travis_retry xvfb-run -a yarn run test --progress=false --browsers=ChromeNoSandbox --watch=false
+  - xvfb-run -a yarn run e2e --no-progress --configuration=ci
 
 after_success:
   - test $TRAVIS_BRANCH = "master" &&
