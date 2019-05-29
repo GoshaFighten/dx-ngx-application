@@ -19,7 +19,7 @@ script:
   - export CHROME_BIN=chromium-browser
   - yarn run lint
   - travis_retry xvfb-run -a yarn run test --progress=false --browsers=ChromeNoSandbox --watch=false
-  - xvfb-run -a yarn run e2e --no-progress --configuration=ci
+  - xvfb-run -a yarn run e2e --configuration=ci
 
 after_success:
   - test $TRAVIS_BRANCH = "master" &&
